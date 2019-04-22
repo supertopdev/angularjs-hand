@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app>
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>How to Initiate project using AngularJS</title>
+        <!-- Bootstrap -->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+
+    
+</head>
+
+<body>
+
+
+    <div class="container" style="margin-top:50px;">
+        <div class="row row-content"
+                      ng-init="
+                         star=
+                         {
+                           name:'Angelina Jolie',
+                           image: 'images/angelina.jpg',
+                           dob: 'June 4, 1975',
+                           description:'Born in Los Angeles, California, on June 4, 
+                           1975, Angelina Jolie starred in the HBO biopic Gia before 
+                           earning an Academy Award for best supporting actress for 
+                           Girl, Interrupted. Jolie has become one of Hollywood top 
+                           marquee names, having starred in movies like Wanted, Mr. and 
+                           Mrs. Smith, Salt and Changeling, earning her first lead 
+                           actress Oscar nod for the latter.',
+                           comment : ''
+
+                        }">
+                       
+             <div class="col-xs-12">
+             
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-rounded" width="60" height="90" 
+                         ng-src={{star.image}} alt="Angelina">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{star.name}}
+                         <span class="label label-danger">superstar</span></h2>
+                            <blockquote>
+                                <p>{{star.description}}</p>
+                            </blockquote>
+                            <blockquote>
+                                <p>{{star.dob}}</p>
+                            </blockquote>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+</body>
+
+</html>
